@@ -6,11 +6,15 @@ public class Ejercicio3 {
         int edad = h.nextInt();
         System.out.println("Ingrese la estatura en metros: ");
         double estatura= h.nextDouble();
-
-        if (edad>=18 & estatura>=1.60){
-            System.out.print("Si cumple");
+        if (edad<0 || estatura<0){
+            System.out.print("Los valores no pueden ser negativos");
         }else{
-            System.out.print("No cumple");
+            if (edad>=18 && estatura>=1.60){
+                System.out.print("Si cumple");
+            }else{
+                System.out.print("No cumple");
+            }
         }
     }
 }
+

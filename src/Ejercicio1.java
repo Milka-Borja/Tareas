@@ -25,4 +25,4 @@ public class Ejercicio1 {
         System.out.print("\n Valor total de Stock: "+totalst);
 
     }
-}
+} //Repositorio clonado C:

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.pinimg.com/originals/e4/cb/6e/e4cb6e21e0f68ff073dc3d64f61c47bd.gif" width="345" height="249" alt="GIF kawaii">
+  <img src="https://i.pinimg.com/originals/6d/48/30/6d4830517a7065b085dffe4816414d81.gif" width="345" height="249" alt="GIF kawaii">
 </p>
 <h1 align="center">🌸✨ Repositorio de Tareas — Milka Borja ✨🌸</h1>
 
@@ -39,6 +39,7 @@
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/Milka-Borja/Tareas.git
+
 
 
 

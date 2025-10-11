@@ -1,7 +1,7 @@
 <h1 align="center">🌸✨ Repositorio de Tareas — Milka Borja ✨🌸</h1>
 
 <p align="center">
-  <img src="https://i.imgur.com/Eybz5Zj.png" width="230" alt="Cute bunny coding">
+  <img src="https://i.pinimg.com/originals/0f/3d/7b/0f3d7b76f734c5b9e03ce4fdb6e2d2b4.gif" width="230" alt="Cute bunny coding">
 </p>
 
 ---
@@ -9,7 +9,7 @@
 ## 💖 Bienvenida
 
 > ¡Hola! 🌷 Bienvenida a mi repositorio de **tareas de programación en Java**.  
-> Aquí guardo mis ejercicios y prácticas de mis tareas, para mantener mi código ordenado y bonito. 💻🌼
+> Aquí guardo mis ejercicios y prácticas organizadas por paquetes, para mantener mi código ordenado y bonito. 💻🌼
 
 ---
 
@@ -28,7 +28,7 @@
 💻 **Lenguaje:** Java ☕  
 🧩 **IDE:** IntelliJ IDEA  
 📂 **Control de versiones:** Git + GitHub  
-
+  
 ---
 
 ## 🌷 Cómo Ejecutar los Programas
@@ -36,5 +36,4 @@
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/Milka-Borja/Tareas.git
-
 

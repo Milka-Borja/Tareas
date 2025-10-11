@@ -1,5 +1,5 @@
 <p align="center">
- <iframe src="https://assets.pinterest.com/ext/embed.html?id=98868154320230622" height="249" width="345" frameborder="0" scrolling="no" ></iframe>
+  <img src="https://i.pinimg.com/originals/e4/cb/6e/e4cb6e21e0f68ff073dc3d64f61c47bd.gif" width="345" height="249" alt="GIF kawaii">
 </p>
 <h1 align="center">🌸✨ Repositorio de Tareas — Milka Borja ✨🌸</h1>
 

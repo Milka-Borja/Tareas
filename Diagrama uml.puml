@@ -1,0 +1,159 @@
+@startuml
+class Tarea_S2.CuentaBancaria {
+- String nombreTitular
+- double saldo
+~ Scanner h
++ void mostrarinformacion()
++ void depositar(double)
++ void retirar(double)
++ void setSaldo(double)
++ double getSaldo()
+}
+
+
+class Tarea_S2.Libro {
+~ String titulo
+~ String autor
+~ int anoPublicacion
++ void mostrarinformacion()
++ {static} void main(String[])
+}
+
+
+class Tarea_S3_1.Main2 {
++ {static} void main(String[])
+}
+
+class Tarea_S3_1.Vehiculo {
++ String marca
+- String modelo
+- int velocidadMaxima
+- String codigoSeguridad
+- String color
++ String getModelo()
++ void setModelo(String)
++ int getVelocidadMaxima()
++ void setCodigoSeguridad(String)
++ String getColor()
++ void setColor(String)
+}
+
+
+class Tarea_repaso.cancion.Cancion {
+- String titulo
+- float duracion
+- int reproducciones
++ void setTitulo(String)
++ void setDuracion(float)
++ void setReproducciones(int)
++ String getTitulo()
++ float getDuracion()
++ int getReproducciones()
++ void reproducir()
+}
+
+
+class Tarea_S1_1.Ejercicio2 {
++ {static} void main(String[])
+}
+
+class Tarea_S1_2.Ejercicio3 {
++ {static} void main(String[])
+}
+
+class Tarea_S3_1.Persona {
+- String nombre
+- int edad
+- String profesion
++ void setNombre(String)
++ void setEdad(int)
++ void setProfesion(String)
++ String getNombre()
++ int getEdad()
++ String getProfesion()
+}
+
+
+class Tarea_S2.Banco {
++ {static} void main(String[])
+}
+
+class Tarea_S3_1.CuentaBancaria2 {
+- double saldo
+- String titular
++ void depositar(double)
++ void retirar(double)
++ double getSaldo()
++ void mostrarInfo()
+}
+
+
+class Tarea_S1_2.Ejercicio2 {
++ {static} void main(String[])
+}
+
+class Tarea_S1_1.Ejercicio1 {
++ {static} void main(String[])
+}
+
+class Tarea_S3_1.Main3 {
++ {static} void main(String[])
+}
+
+class Tarea_repaso.artista.Artista {
+- String nombre
+- String genero
+- int seguidores
++ void setNombre(String)
++ void setGenero(String)
++ void setSeguidores(int)
++ String getNombre()
++ String getGenero()
++ int getSeguidores()
++ void mostrarPerfil()
++ void ganarSeguidores(int)
+}
+
+
+class Tarea_repaso.Main {
++ {static} void main(String[])
+}
+
+class Tarea_S1_2.Ejercicio4 {
++ {static} void main(String[])
+}
+
+class Tarea_S1_2.Ejercicio1 {
++ {static} void main(String[])
+}
+
+class Tarea_S3_1.Main {
++ {static} void main(String[])
+}
+
+class Tarea_S3_1.Producto {
+- double precio
+- String nombre
++ void setPrecio(double)
++ void setNombre(String)
++ double getPrecio()
++ String getNombre()
++ void mostrarInfo()
++ {static} void main(String[])
+}
+
+
+class Tarea_S1_1.Ejercicio3 {
++ {static} void main(String[])
+}
+
+class Tarea_S2.Producto {
+~ String nombre
+~ double precio
+~ int cantidad
++ void mostrar()
++ {static} void main(String[])
+}
+
+
+@enduml

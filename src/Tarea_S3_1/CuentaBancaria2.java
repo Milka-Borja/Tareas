@@ -5,6 +5,7 @@ public class CuentaBancaria2 {
         private String titular;
 
         public CuentaBancaria2(String titular) {
+
             this.titular = titular;
         }
         public void depositar(double monto) {

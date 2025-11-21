@@ -1,0 +1,15 @@
+@startuml
+class Actividad_Asincronica.GestionPrecios {
+~ {static} ArrayList<Double> precios
+~ {static} Scanner sc
++ {static} void main(String[])
++ {static} void ingresarPrecio()
++ {static} void mostrarPrecios()
++ {static} void precioMasAlto()
++ {static} void precioMasBajo()
++ {static} void preciosIguales()
++ {static} void buscarPrecio()
+}
+
+
+@enduml

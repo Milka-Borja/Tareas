@@ -1,0 +1,39 @@
+@startuml
+class Tarea_S8.Ejercicio2.Dispositivo {
+- String marca
+- String modelo
+- double precio
++ String getMarca()
++ void setMarca(String)
++ String getModelo()
++ void setModelo(String)
++ double getPrecio()
++ void setPrecio(double)
++ void mostrarInfo()
+}
+
+
+class Tarea_S8.Ejercicio2.DatoInvalidoException {
+}
+class Tarea_S8.Ejercicio2.Laptop {
+- int ram
++ void mostrarInfo()
+}
+
+
+class Tarea_S8.Ejercicio2.Main {
++ {static} void main(String[])
+}
+
+class Tarea_S8.Ejercicio2.Telefono {
+- String tipo
++ void mostrarInfo()
+}
+
+
+
+
+Tarea_S8.Ejercicio2.Exception <|-- Tarea_S8.Ejercicio2.DatoInvalidoException
+Tarea_S8.Ejercicio2.Dispositivo <|-- Tarea_S8.Ejercicio2.Laptop
+Tarea_S8.Ejercicio2.Dispositivo <|-- Tarea_S8.Ejercicio2.Telefono
+@enduml

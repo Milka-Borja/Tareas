@@ -1,0 +1,45 @@
+@startuml
+class Tarea_S8.Ejercicio1.CarreraVehiculos {
+- int numVehiculos
+- String tipoPista
++ int getNumVehiculos()
++ String getTipoPista()
++ void mostrarDetalles()
+}
+
+
+abstract class Tarea_S8.Ejercicio1.Juego {
+- String nombre
+- String desarrollador
+- double precio
++ String getNombre()
++ String getDesarrollador()
++ double getPrecio()
++ void setNombre(String)
++ void setDesarrollador(String)
++ void setPrecio(double)
++ {abstract}void mostrarDetalles()
+}
+
+
+class Tarea_S8.Ejercicio1.JuegoDatoInvalidoException {
+}
+class Tarea_S8.Ejercicio1.MariBros {
+- int nivelMax
+- boolean tienePowerUps
++ int getNivelMax()
++ boolean isTienePowerUps()
++ void mostrarDetalles()
+}
+
+
+class Tarea_S8.Ejercicio1.MainGames {
++ {static} void main(String[])
+}
+
+
+
+Tarea_S8.Ejercicio1.Juego <|-- Tarea_S8.Ejercicio1.CarreraVehiculos
+Tarea_S8.Ejercicio1.Exception <|-- Tarea_S8.Ejercicio1.JuegoDatoInvalidoException
+Tarea_S8.Ejercicio1.Juego <|-- Tarea_S8.Ejercicio1.MariBros
+@enduml

@@ -5,9 +5,9 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         SistemaCandidatas sistema = new SistemaCandidatas();
         int op=0;
-        while(op != 7){
+        while(op != 9){
             System.out.println("---- Ménu Candidatas ----");
-            System.out.println("1. Registrar Candidatas \n2. Mostrar Candidatas\n 3. Eliminar candidata\n4. Editar candidata\n5. Buscar candidata \n6. Filtrar por tipo\n 7. Salir");
+            System.out.println("1. Registrar Candidatas \n2. Mostrar Candidatas\n3. Eliminar candidata\n4. Editar candidata\n5. Buscar candidata \n6. Filtrar por tipo\n7. Registrar voto\n8. Mostrar resultados y ganadora\n 9. Salir");
             op = Integer.parseInt(sc.nextLine());
 
             switch(op) {
@@ -91,6 +91,18 @@ public class Main {
                     sistema.filtrarPorTipo(tipo);
                     break;
                 case 7:
+                    System.out.print("Ingrese ID de la candidata a votar: ");
+                    int idV = Integer.parseInt(sc.nextLine());
+                    sistema.votar(idV);
+                    break;
+                case 8:
+                    Candidata g = sistema.obtenerGanadora();
+                    if (g != null) {
+                        System.out.println("---- GANADORA ----");
+                        g.mostrarDetalles();
+                    }
+                    break;
+                case 9:
                     System.out.println("Saliendo");
                     break;
                 default:

@@ -2,6 +2,7 @@ package Tarea_S8.Ejercicio4;
 import java.util.ArrayList;
 public class SistemaCandidatas {
     private ArrayList<Candidata> lista = new ArrayList<>();
+    private ArrayList<Voto> votos = new ArrayList<>();
 
     public void registrar(Candidata c) {
         lista.add(c);
@@ -71,4 +72,51 @@ public class SistemaCandidatas {
             }
         }
     }
+    public void votar(int idCandidata) {
+        if (buscarPorId(idCandidata) != null) {
+            votos.add(new Voto(idCandidata));
+            System.out.println("Voto registrado correctamente.");
+        } else {
+            System.out.println("No existe candidata con ese ID.");
+        }
+    }
+    public int contarVotosDe(int id) {
+        int total = 0;
+        for (Voto v : votos) {
+            if (v.getIdCandidata() == id) {
+                total++;
+            }
+        }
+        return total;
+    }
+    public Candidata obtenerGanadora() {
+        if (votos.isEmpty()) {
+            System.out.println("No hay votos aún.");
+            return null;
+        }
+
+        Candidata mejor = null;
+        int maxVotos = -1;
+
+        for (Candidata c : lista) {
+            int v = contarVotosDe(c.getId());
+
+            if (v > maxVotos) {
+                maxVotos = v;
+                mejor = c;
+            }
+            else if (v == maxVotos && mejor != null) {
+                if (c.getPuntajeJurado() > mejor.getPuntajeJurado()) {
+                    mejor = c;
+                }
+            }
+        }
+
+        return mejor;
+    }
+
+
+
+
+
 }

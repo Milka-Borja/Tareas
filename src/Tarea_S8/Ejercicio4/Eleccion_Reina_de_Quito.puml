@@ -1,0 +1,69 @@
+@startuml
+class Tarea_S8.Ejercicio4.CandidataProfesional {
+- String profesion
+- int aniosExperiencia
++ void mostrarDetalles()
+}
+
+
+class Tarea_S8.Ejercicio4.SistemaCandidatas {
+- ArrayList<Candidata> lista
+- ArrayList<Voto> votos
++ void registrar(Candidata)
++ void mostrar()
++ Candidata buscarPorId(int)
++ void eliminar(int)
++ void editar(int,String,int,String,double)
++ void filtrarPorTipo(String)
++ void votar(int)
++ int contarVotosDe(int)
++ Candidata obtenerGanadora()
+}
+
+
+class Tarea_S8.Ejercicio4.CandidataEstudiante {
+- String universidad
+- String carrera
++ String getUniversidad()
++ String getCarrera()
++ void mostrarDetalles()
+}
+
+
+abstract class Tarea_S8.Ejercicio4.Candidata {
+- int id
+- String nombre
+- int edad
+- String distrito
+- double puntajeJurado
++ int getId()
++ String getNombre()
++ int getEdad()
++ String getDistrito()
++ double getPuntajeJurado()
++ void setNombre(String)
++ void setEdad(int)
++ void setDistrito(String)
++ void setPuntajeJurado(double)
++ {abstract}void mostrarDetalles()
+}
+
+
+class Tarea_S8.Ejercicio4.Main {
++ {static} void main(String[])
+}
+
+class Tarea_S8.Ejercicio4.Voto {
+- int idCandidata
++ int getIdCandidata()
+}
+
+
+class Tarea_S8.Ejercicio4.candidataDatoInvalidoException {
+}
+
+
+Tarea_S8.Ejercicio4.Candidata <|-- Tarea_S8.Ejercicio4.CandidataProfesional
+Tarea_S8.Ejercicio4.Candidata <|-- Tarea_S8.Ejercicio4.CandidataEstudiante
+Tarea_S8.Ejercicio4.Exception <|-- Tarea_S8.Ejercicio4.candidataDatoInvalidoException
+@enduml

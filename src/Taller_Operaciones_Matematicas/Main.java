@@ -1,4 +1,4 @@
-package Tarea_Swing;
+package Taller_Operaciones_Matematicas;
 
 public class Main {
     public static void main(String[] args) {

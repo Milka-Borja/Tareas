@@ -1,4 +1,4 @@
-package Tarea_Swing;
+package Taller_Operaciones_Matematicas;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

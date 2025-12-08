@@ -1,0 +1,46 @@
+@startuml
+class Actividad_Asincronica.Ejercicio2.Evento {
+- String nombre
+- ArrayList<Participante> participantes
++ String getNombre()
++ void agregarParticipante(Participante)
++ void mostrarParticipantes()
+}
+
+
+class Actividad_Asincronica.Ejercicio2.Atleta {
++ void mostrarTipo()
+}
+
+abstract class Actividad_Asincronica.Ejercicio2.Participante {
+# String nombre
+# String pais
++ {abstract}void mostrarTipo()
+}
+
+
+class Actividad_Asincronica.Ejercicio2.Olimpiada {
+- String nombre
+- int año
+- ArrayList<Evento> eventos
++ void agregarEvento(Evento)
++ Evento buscarEvento(String)
++ void mostrarEventos()
+}
+
+
+class Actividad_Asincronica.Ejercicio2.Equipo {
+- int integrantes
++ void mostrarTipo()
+}
+
+
+class Actividad_Asincronica.Ejercicio2.Sistema {
++ {static} void main(String[])
+}
+
+
+
+Actividad_Asincronica.Ejercicio2.Participante <|-- Actividad_Asincronica.Ejercicio2.Atleta
+Actividad_Asincronica.Ejercicio2.Participante <|-- Actividad_Asincronica.Ejercicio2.Equipo
+@enduml

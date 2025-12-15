@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class bancoForm extends JFrame {
     private JLabel lblSaldo;
-    private JLabel lblNombreCliente; // Asegúrate de que este componente exista en tu .form
+    private JLabel lblNombreCliente;
     private JPanel mainPanel;
     private JButton btnDeposito;
     private JButton SALIRButton;
@@ -27,7 +27,7 @@ public class bancoForm extends JFrame {
     private ArrayList<String> listaTransacciones = new ArrayList<>();
 
 
-    // 🛑 NUEVO CONSTRUCTOR
+
     public bancoForm(String usuario, String nombre) {
         this.usuarioActual = usuario;
         this.nombreCliente = nombre;
@@ -44,13 +44,13 @@ public class bancoForm extends JFrame {
             gatos2.setIcon(gati2);
         } catch (Exception e) {
             System.err.println("Error al cargar imágenes. Revisar la ruta en el classpath.");
-            // Esto evita que la aplicación se caiga si la ruta sigue siendo incorrecta
+
         }
 
-        // Cargar el saldo inicial y el nombre desde la DB
+
         cargarDatosIniciales();
 
-        // Los ActionListeners se mantienen y se conectan a los nuevos métodos
+
 
         btnDeposito.addActionListener(new ActionListener() {
             @Override
@@ -150,9 +150,6 @@ public class bancoForm extends JFrame {
         });
     }
 
-    // ----------------------------------------------------------------------
-    // Lógica de Base de Datos y Actualización de UI
-    // ----------------------------------------------------------------------
 
     private void cargarDatosIniciales() {
         Connection conn = null;
@@ -173,10 +170,9 @@ public class bancoForm extends JFrame {
                 this.saldo = rs.getDouble("saldo");
                 this.nombreCliente = rs.getString("nombre_cliente");
 
-                // Actualiza la interfaz con los datos cargados
+
                 lblSaldo.setText("Saldo: $" + String.format("%.2f", this.saldo));
-                // Si tienes lblNombreCliente, descomenta la siguiente línea:
-                // lblNombreCliente.setText("Bienvenido, " + this.nombreCliente);
+
             }
 
         } catch (SQLException e) {
@@ -190,7 +186,7 @@ public class bancoForm extends JFrame {
         }
     }
 
-    // Método para actualizar el saldo en la base de datos
+
     private void actualizarSaldoDB() {
         Connection conn = null;
         PreparedStatement ps = null;
@@ -219,7 +215,7 @@ public class bancoForm extends JFrame {
         }
     }
 
-    // Método para registrar y mostrar las transacciones
+
     private void registrarTransaccion(String mensaje) {
         listaTransacciones.add(mensaje + " | Saldo: $" + String.format("%.2f", this.saldo));
         txtHistorial.setText("");

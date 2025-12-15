@@ -88,7 +88,7 @@ public class registerForm extends JFrame {
             }
 
         } catch (SQLException e) {
-            // Error 1062 es el código de MySQL para entrada duplicada (UNIQUE key, en este caso, el usuario)
+
             if (e.getErrorCode() == 1062) {
                 JOptionPane.showMessageDialog(this, "El nombre de usuario '" + usuario + "' ya existe. Por favor, elige otro.", "Error de Duplicado", JOptionPane.ERROR_MESSAGE);
             } else {

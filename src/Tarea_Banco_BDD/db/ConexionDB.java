@@ -10,7 +10,6 @@ public class ConexionDB {
     private static final String USUARIO = "root";
     private static final String CLAVE = "root";
 
-    // Metodo estático para obtener la conexión
     public static Connection getConnection() {
         Connection conn = null;
         try {
